@@ -1,0 +1,189 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'content' %}
+
+<!-- Banner -->
+<section id="banner">
+    <div class="bg-cover" style="background-image: url('{% static 'img/banner1.png' %}'); height: 100vh;">
+        <div class="overlay"></div>
+        <div class="d-flex flex-column justify-content-center align-items-center h-100 text-center text-white position-relative">            
+            <h1 class="display-4 fw-bold mt-4 position-relative" style="font-size: 110px;">
+              <div class="position-absolute w-100 text-start" style="bottom: 100%; left: 0; padding: 0; margin: 0;">
+                <h6 class="text-uppercase" style="font-size: 20px; margin: 0; padding: 0;">MAESTRANZA</h6>
+              </div>
+              <span style="color: #ff9800; padding: 0;" >SAN</span> SEBASTIÁN
+            </h1>
+            
+            <p class="mt-2 text-lg text-start " style="max-width: 600px; font-size: 20px;">
+              La excelencia en servicios y seguridad son nuestra prioridad. Confía en nosotros para soluciones industriales de alta calidad, respaldadas por un compromiso inquebrantable con tu seguridad.
+            </p>
+            
+            <a href="#" class="custom-btn mt-4">LEER MÁS</a>
+          </div>
+    </div>
+    <div class="bg-450">
+        <div class="container">
+            <div class="d-flex flex-column flex-md-row align-items-center bg-450 p-4">
+                <div class="flex-fill text-center text-md-start mb-4 mb-md-0">
+                    <div class="row">
+                        <h2 class="display-1 fw-bold text-dark text-center" style="font-size: 120px;"><span
+                                style="color: #ff9800;">450</span></h2>
+                        <h3 class="h4 fw-semibold text-secondary text-white text-center">Proyectos completados</h3>
+                        <p class="text-muted mt-2 text-white text-center">
+                            Empleamos prácticas de Lean Construction en nuestros proyectos <br>para crear un mejor
+                            entorno para nuestros empleados y socios, <br>y ofrecer un mejor valor a nuestros clientes.
+                        </p>
+                    </div>
+
+                </div>
+                <div class="row">
+                    <div class="bg-const p-4 rounded shadow-lg">
+                        <h4 class="h2 fw-bold text-white">Construcción <br> Modelado de <br>Información</h4>
+                    </div>
+                    <div class=" bg-const-text p-4 rounded shadow-lg">
+                        <p class="text-muted mt-2 text-white">
+                            Estamos cambiando la forma en que pensamos <br>sobre el proceso de construcción y podemos
+                            lograr <br>ahorros significativos en costos y horarios <br> para nuestros clientes.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- Sobre nosotros -->
+<section class="bg-light">
+    <div class="container  bg-light">
+        <div class="row align-items-center ">
+            <div class="col-md-6 text-center">
+                <img src="{% static 'img/ingeniero.png' %}" alt="Construction Worker" class="mb-4 img-fluid" />
+            </div>
+            <div class="col-md-6 ">
+                <h2 class="h4 fw-bold text-secondary" style="font-size: 30px;">SOBRE NOSOTROS</h2>
+                <h3 class="h5 fw-semibold text-dark mt-2" style="font-size: 40px;">Tenemos una orgullosa tradición de
+                    servicio como contratista general desde 2010</h3>
+                <p class="text-muted mt-4">
+                    Con sede en Santiago, Tenemos más de 14 años de experiencia en la construcción en todo el pais con
+                    la reputación de entregar proyectos de diseño y construcción grandes y únicos antes de lo
+                    programado y dentro del presupuesto. Nuestra compañía ha servido a clientes mas de una décadas. En
+                    ese tiempo, hemos descubierto que la clave del éxito en
+                    cada proyecto, es comprender las necesidades y expectativas del cliente y luego superar esas
+                    expectativas.
+                </p>
+                <a href="#" class="btn custom-btn mt-4">CONOCE MÁS</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+<!-- informacion -->
+<div class="container-fluid">
+    <div class="row g-0 justify-content-between">
+        <div class="col-12 col-md-4">
+            <div class="custom-card" style="background-color: #ff9800;">
+                <i class="fa-solid fa-ruler-combined"></i>
+                <h2 class="mt-4 roboto-light">Diseño y</h2>
+                <h3 class="text-xl roboto-bold">CONSTRUCCIÓN</h3>
+                <p class="mt-2 text-center container">Soluciones integrales en diseño y construcción, fusionando
+                    creatividad y calidad para espacios únicos.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4">
+            <div class="custom-card">
+                <i class="fa-solid fa-building"></i>
+                <h2 class="mt-4 roboto-light">Edificio</h2>
+                <h3 class="text-xl roboto-bold">RENOVACIÓN</h3>
+                <p class="mt-2 text-center container">Revitalizamos tu espacio con renovaciones modernas, manteniendo la
+                    esencia y mejorando cada detalle.</p>
+            </div>
+        </div>
+        <div class="col-12 col-md-4 ">
+            <div class="custom-card" style="background-color: #ff9800;">
+                <i class="fa-solid fa-list-check"></i>
+                <h2 class="mt-4 roboto-light">Proyecto</h2>
+                <h3 class="text-xl roboto-bold">GESTION</h3>
+                <p class="mt-2 text-center container">Gestión eficiente de proyectos: planificamos, coordinamos y
+                    ejecutamos cada etapa para garantizar el éxito.</p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!-- Proyectos Recientes -->
+<section id="projects">
+    <div class="bg-450 text-white text-center p-4">
+        <h2 class="display-4 font-weight-bold mb-4">PROYECTOS RECIENTES</h2>
+        <p class="mb-4" style="font-size: 20px;">Ofrecemos una amplia gama de servicios</p>
+        <p class="mb-4 text-center container" style="font-size: 20px;">
+          Desde la concepción hasta la finalización, todo nuestro equipo de estimadores, diseñadores, gerentes de proyectos y ejecutivos experimentados hacen de las necesidades de nuestros clientes una
+          prioridad. Tenemos experiencia en una amplia variedad de proyectos y métodos de entrega, y utilizamos tanto prácticas probadas en el tiempo y técnicas de vanguardia para garantizar que los
+          proyectos de nuestros clientes alcancen su máximo potencial.
+        </p>
+        <div class="row">
+          <div class="col-12 col-md-3 mb-4">
+            <img class="img-fluid rounded" src="{% static 'img/projecto1.jpg' %}" alt="Project 1" />
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <img class="img-fluid rounded" src="{% static 'img/projecto1.jpg' %}" alt="Project 2" />
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <img class="img-fluid rounded" src="{% static 'img/projecto1.jpg' %}" alt="Project 3" />
+          </div>
+          <div class="col-12 col-md-3 mb-4">
+            <img class="img-fluid rounded" src="{% static 'img/projecto1.jpg' %}" alt="Project 4" />
+          </div>
+        </div>
+      
+        <button class="btn custom-btn mt-4">VER MÁS</button>
+    </div>
+
+
+</section>
+
+<!-- Clientes -->
+<section id="clientes" class="py-5">
+    <div class="container">
+        <div class="row align-items-center">
+            <!-- Texto y botón a la izquierda -->
+            <div class="col-md-6 mb-4 mb-md-0 text-left">
+                <h2 class="text-uppercase text-muted">NUESTROS CLIENTES</h2>
+                <h1 class="font-weight-bold mt-3">Trabajamos con los mejores partners</h1>
+                <p class="text-muted mt-4">
+                    Valoramos profundamente a nuestros clientes y trabajamos estrechamente con ellos para garantizar que cada proyecto supere sus expectativas. Nuestra relación con los clientes es fundamental, y nos enorgullece contar con una base de clientes que confía en nuestra experiencia y dedicación. Con cada proyecto, nos esforzamos por ofrecer soluciones personalizadas y de alta calidad que reflejen sus necesidades y aspiraciones.
+                </p>
+                <button class="btn custom-btn mt-4">LEE MÁS</button>
+            </div>
+            <!-- Imágenes a la derecha -->
+            <div class="col-md-6">
+                <div class="row row-cols-2 row-cols-md-3 g-3">
+                    <div class="col text-center">
+                        <img src="{% static 'img/LogoKaufmann.jpg' %}" alt="Kaufmann Logo" class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+                    </div>
+                    <div class="col text-center">
+                        <img src="{% static 'img/canal13.png' %}" alt="Canal 13 Logo" class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+                    </div>
+                    <div class="col text-center">
+                        <img src="{% static 'img/bomberos.jpg' %}" alt="Bomberos Logo" class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+                    </div>
+                    <div class="col text-center">
+                        <img src="{% static 'img/andesMotor.jpeg' %}" alt="Andes Motor Logo" class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+                    </div>
+                    <div class="col text-center">
+                        <img src="{% static 'img/pdi.jpg' %}" alt="PDI Logo" class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+                    </div>
+                    <div class="col text-center">
+                        <img src="{% static 'img/ituri.jpg' %}" alt="Ituri Logo" class="img-fluid rounded shadow-sm" style="max-width: 100px; height: auto;" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+
+{% endblock %}

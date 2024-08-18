@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+{% load static %}
+
+{% block 'footer' %}
+
+<!-- Footer -->
+<footer class="bg-black text-white py-8">
+    <div class="container mx-auto px-4 flex flex-col md:flex-row items-center justify-between space-y-4 md:space-y-0">
+      <!-- Logo, nombre de la empresa y derechos reservados -->
+      <div class="flex items-center space-x-3">
+        <img aria-hidden="true" alt="Company Logo" src="{% static 'img/1.png' %}" class="h-5 w-5" style="height: 200px; width: 200px" />
+        <div>
+          <h2 class="text-lg font-semibold">Nombre de la Empresa</h2>
+          <p class="text-sm">San Sebastian © 2010 Todos los derechos reservados</p>
+        </div>
+      </div>
+      
+      <!-- Navegación de enlaces -->
+      <nav class="flex items-center space-x-4">
+        <a href="#" class="text-white hover:text-gray-400">Inicio</a>
+        <a href="#" class="text-white hover:text-gray-400">Servicios</a>
+        <a href="#" class="text-white hover:text-gray-400">Portafolio</a>
+        <a href="#" class="text-white hover:text-gray-400">Contacto</a>
+      </nav>
+      
+      <!-- Redes sociales -->
+      <div class="flex items-center space-x-4">
+        <a href="#" class="text-white hover:text-gray-400">
+          <img aria-hidden="true" alt="Facebook" src="https://placehold.co/24x24?text=FB" class="h-6 w-6" />
+        </a>
+        <a href="#" class="text-white hover:text-gray-400">
+          <img aria-hidden="true" alt="Twitter" src="https://placehold.co/24x24?text=TW" class="h-6 w-6" />
+        </a>
+        <a href="#" class="text-white hover:text-gray-400">
+          <img aria-hidden="true" alt="Instagram" src="https://placehold.co/24x24?text=IG" class="h-6 w-6" />
+        </a>
+      </div>
+    </div>
+  </footer>
+  
+{% endblock %}

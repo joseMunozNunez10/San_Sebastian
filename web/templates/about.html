@@ -1,45 +1,109 @@
 {% extends 'base.html' %}
 {% load static %}
 
-{% block content %}
-<body class="bg-dark">
-    <section class="py-5">
-      <div class="container">
-        <div class="row align-items-center">
-          <!-- Imagen 1 -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img class="img-fluid rounded-3 shadow" src="https://assets.nicepagecdn.com/d2cc3eaa/2481404/images/hgghgh.jpg" alt="Image 1">
+{% block 'content' %}
+
+<!-- Sobre Nosotros -->
+<section class="py-5 mt-5 bg-dark">
+  <div class="container">
+
+    <!-- Título de la sección -->
+    <h1 class="text-center text-white mb-5">Sobre Nosotros</h1>
+
+    <div class="row align-items-center">
+      <!-- Imagen 1 -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img class="img-fluid rounded-3 shadow" src="https://assets.nicepagecdn.com/d2cc3eaa/2481404/images/hgghgh.jpg"
+          alt="Image 1">
+      </div>
+
+      <!-- Imagen 2 -->
+      <div class="col-lg-6 mb-4 mb-lg-0">
+        <img class="img-fluid rounded-3 shadow" src="https://assets.nicepagecdn.com/d2cc3eaa/2481404/images/vvv.jpg"
+          alt="Image 2">
+      </div>
+
+      <!-- Contenido de la sección -->
+      <div class="col-lg-12 mt-5 row">
+        <div class="col-lg-6">
+          <div class="p-4 bg-white rounded-3 shadow h-100" style="margin-right: 20px;">
+            <h2 class="text-dark">Sobre Nosotros</h2>
+            <p class="text-dark">Con sede en Santiago, Tenemos más de 14 años de experiencia en la construcción en todo
+              el país con la reputación de entregar proyectos de diseño y construcción grandes y únicos antes de lo
+              programado y dentro del presupuesto. <br> <br> Nuestra compañía ha servido a clientes más de una década.
+              En ese tiempo, hemos descubierto que la clave del éxito en cada proyecto es comprender las necesidades y
+              expectativas del cliente y luego superar esas expectativas.</p>
+            <a href="{% url 'contactus' %}" class="btn btn-outline-dark rounded-pill custom-btn">Contactos</a>
           </div>
-  
-          <!-- Imagen 2 -->
-          <div class="col-lg-6 mb-4 mb-lg-0">
-            <img class="img-fluid rounded-3 shadow" src="https://assets.nicepagecdn.com/d2cc3eaa/2481404/images/vvv.jpg" alt="Image 2">
+        </div>
+
+        <div class="col-lg-6 mt-1">
+          <div class="p-4 bg-white rounded-3 shadow h-100">
+            <h2 class="text-dark">Misión</h2>
+            <p class="text-dark">Proveer soluciones metalúrgicas de alta calidad, combinando innovación y tecnología
+              avanzada para satisfacer las necesidades de nuestros clientes, garantizando la eficiencia, seguridad y
+              sostenibilidad en cada uno de nuestros procesos.</p>
+            <h2 class="text-dark">Visión</h2>
+            <p class="text-dark">Ser líderes en el sector metalúrgico a nivel nacional, reconocidos por nuestra
+              excelencia en el servicio, compromiso con la mejora continua y capacidad para adaptarnos a las exigencias
+              del mercado, contribuyendo al desarrollo industrial del país.</p>
           </div>
-  
-          <!-- Contenido de la sección -->
-          <div class="col-lg-12 mt-5">
-            <div class="p-4 bg-white rounded-3 shadow">
-              <h2 class="text-dark">About Us</h2>
-              <p class="text-dark">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur id suscipit ex. Suspendisse rhoncus laoreet purus quis elementum. Phasellus sed efficitur dolor, et ultricies sapien.</p>
-              <p class="text-muted">
-                Images from 
-                <a href="https://www.freepik.com/photos/background" class="text-decoration-none">Freepik</a>
-              </p>
-              <a href="#" class="btn btn-outline-dark rounded-pill">Learn More</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- Servicios -->
+<section id="services" class="bg-white py-5">
+  <div class="container">
+    <div class="row">
+      <div class="col-lg-12">
+        <h2 class="text-center mb-4">NUESTROS SERVICIOS</h2>
+        <div class="row">
+          <div class="col-lg-4 mb-4">
+            <div class="card service-card">
+              <img class="card-img-top" src="{% static 'img/Omayor.jpeg' %}" alt="Card Image 1">
+              <div class="card-body">
+                <h3 class="card-title">Obras Mayores</h3>
+                <p class="card-text">Nos especializamos en obras mayores, ofreciendo soluciones integrales para
+                  proyectos de gran envergadura en la industria metalúrgica. <br> Nuestro equipo de expertos y
+                  maquinaria avanzada nos permiten llevar a cabo construcciones complejas y personalizadas, garantizando
+                  la máxima calidad y cumplimiento de los plazos establecidos de nuestros clientes.</p>
+                <a href="#" class="btn custom-btn">Ver Proyectos Mayores</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card service-card">
+              <img class="card-img-top" src="{% static 'img/Omenor.jpg' %}" alt="Card Image 2">
+              <div class="card-body">
+                <h3 class="card-title">Obras Menores</h3>
+                <p class="card-text">Ofrecemos servicios para obras menores con la misma dedicación y precisión que en
+                  proyectos de mayor escala. <br> Desde reparaciones hasta modificaciones estructurales, nos aseguramos
+                  de que cada detalle cumpla con los más altos estándares de calidad, adaptándonos a las necesidades
+                  específicas de nuestros clientes.</p>
+                <a href="#" class="btn custom-btn">Ver Proyectos Menores</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-4 mb-4">
+            <div class="card service-card">
+              <img class="card-img-top" src="{% static 'img/vehiculo.jpg' %}" alt="Card Image 3">
+              <div class="card-body">
+                <h3 class="card-title">Vehículos</h3>
+                <p class="card-text">Proveemos servicios especializados en la fabricación, mantenimiento y modificación
+                  de vehículos industriales y comerciales. <br>Nuestro enfoque está en la durabilidad y funcionalidad,
+                  utilizando materiales de alta resistencia y técnicas avanzadas para asegurar que cada vehículo cumpla
+                  con las demandas operativas más exigentes.</p>
+                <a href="#" class="btn custom-btn">Ver Proyectos Vehículos</a>
+              </div>
             </div>
           </div>
         </div>
       </div>
-    </section>
-  
-    <section class="bg-secondary text-white py-3">
-      <div class="container text-center">
-        <p class="mb-1">
-          Website Design created with 
-          <a href="#" class="text-white text-decoration-none">Website Builder</a>
-        </p>
-      </div>
-    </section>
-  </body>
-  
+    </div>
+  </div>
+</section>
+
 {% endblock %}

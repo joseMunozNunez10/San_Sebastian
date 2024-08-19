@@ -19,7 +19,7 @@
                 La excelencia en servicios y seguridad son nuestra prioridad. Confía en nosotros para soluciones industriales de alta calidad, respaldadas por un compromiso inquebrantable con tu seguridad.
             </p>
             
-            <a href="#" class="custom-btn mt-4">CONOCE MÁS</a>
+            <a href="#services" class="custom-btn mt-4">PROYECTOS</a>
         </div>
     </div>
     <div class="bg-450">
@@ -53,7 +53,6 @@
     </div>
 </section>
 
-
 <!-- Sobre nosotros -->
 <section class="bg-light">
     <div class="container  bg-light">
@@ -73,44 +72,42 @@
                     cada proyecto, es comprender las necesidades y expectativas del cliente y luego superar esas
                     expectativas.
                 </p>
-                <a href="#" class="btn custom-btn mt-4">CONOCE MÁS</a>
+                <a href="{% url 'about' %}" class="btn custom-btn mt-4">CONOCE MÁS</a>
             </div>
         </div>
     </div>
 </section>
 
 <!-- informacion -->
-<div class="container-fluid">
-    <div class="row g-0 justify-content-between">
-        <div class="col-12 col-md-4">
-            <div class="custom-card" style="background-color: #ff9800;">
-                <i class="fa-solid fa-ruler-combined"></i>
-                <h2 class="mt-4 roboto-light">Diseño y</h2>
-                <h3 class="text-xl roboto-bold">CONSTRUCCIÓN</h3>
-                <p class="mt-2 text-center container">Soluciones integrales en diseño y construcción, fusionando
-                    creatividad y calidad para espacios únicos.</p>
+<section id="informacionescolor">
+    <div class="container-fluid ">
+        <div class="row g-0 justify-content-between">
+            <div class="col-12 col-md-4">
+                <div class="custom-card">
+                    <i class="fa-solid fa-ruler-combined"></i>
+                    <h2 class="mt-4 roboto-light">Diseño y</h2>
+                    <h3 class="text-xl roboto-bold">CONSTRUCCIÓN</h3>
+                    <p class="mt-2 text-center">Soluciones integrales en diseño y construcción, fusionando creatividad y calidad para espacios únicos.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-12 col-md-4">
-            <div class="custom-card">
-                <i class="fa-solid fa-building"></i>
-                <h2 class="mt-4 roboto-light">Edificio</h2>
-                <h3 class="text-xl roboto-bold">RENOVACIÓN</h3>
-                <p class="mt-2 text-center container">Revitalizamos tu espacio con renovaciones modernas, manteniendo la
-                    esencia y mejorando cada detalle.</p>
+            <div class="col-12 col-md-4">
+                <div class="custom-card2">
+                    <i class="fa-solid fa-building"></i>
+                    <h2 class="mt-4 roboto-light">Edificio</h2>
+                    <h3 class="text-xl roboto-bold">RENOVACIÓN</h3>
+                    <p class="mt-2 text-center">Revitalizamos tu espacio con renovaciones modernas, manteniendo la esencia y mejorando cada detalle.</p>
+                </div>
             </div>
-        </div>
-        <div class="col-12 col-md-4 ">
-            <div class="custom-card" style="background-color: #ff9800;">
-                <i class="fa-solid fa-list-check"></i>
-                <h2 class="mt-4 roboto-light">Proyecto</h2>
-                <h3 class="text-xl roboto-bold">GESTION</h3>
-                <p class="mt-2 text-center container">Gestión eficiente de proyectos: planificamos, coordinamos y
-                    ejecutamos cada etapa para garantizar el éxito.</p>
+            <div class="col-12 col-md-4">
+                <div class="custom-card">
+                    <i class="fa-solid fa-list-check"></i>
+                    <h2 class="mt-4 roboto-light">Proyecto</h2>
+                    <h3 class="text-xl roboto-bold">GESTIÓN</h3>
+                    <p class="mt-2 text-center">Gestión eficiente de proyectos: planificamos, coordinamos y ejecutamos cada etapa para garantizar el éxito.</p>
+                </div>
             </div>
         </div>
     </div>
-</div>
 </section>
 
 <!-- Proyectos Recientes -->
@@ -126,15 +123,27 @@
         <div class="row">
           <div class="col-12 col-md-3 mb-4">
             <img class="img-fluid rounded" src="{% static 'img/projecto1.jpg' %}" alt="Project 1" />
+            <h3 class="text-white mt-3">Projecto</h3>
+            <h4 class="text-white mt-3">nombre del royecto</h4>
+            <p class="text-muted text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div class="col-12 col-md-3 mb-4">
             <img class="img-fluid rounded" src="{% static 'img/projecto1.jpg' %}" alt="Project 2" />
+            <h3 class="text-white mt-3">Projecto2</h3>
+            <h4 class="text-white mt-3">nombre del royecto</h4>
+            <p class="text-muted text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div class="col-12 col-md-3 mb-4">
             <img class="img-fluid rounded" src="{% static 'img/projecto1.jpg' %}" alt="Project 3" />
+            <h3 class="text-white mt-3">Projecto</h3>
+            <h4 class="text-white mt-3">nombre del royecto</h4>
+            <p class="text-muted text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
           </div>
           <div class="col-12 col-md-3 mb-4">
             <img class="img-fluid rounded" src="{% static 'img/projecto1.jpg' %}" alt="Project 4" />
+            <h3 class="text-white mt-3">Projecto</h3>  
+            <h4 class="text-white mt-3">nombre del royecto</h4>
+            <p class="text-muted text-white">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>    
           </div>
         </div>
       

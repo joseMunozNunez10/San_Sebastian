@@ -361,3 +361,13 @@
     position: relative;
     z-index: 2;
 }
+
+/* #######################    ANIMATIONS 450   ####################### */
+#animated-number {
+    transition: all 0.2s ease-in-out;
+}
+
+#animated-number:hover {
+    transform: scale(1.1);
+    color: #d97d00;
+}

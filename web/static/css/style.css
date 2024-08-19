@@ -1,3 +1,77 @@
+/*################ Media ################*/
+
+.banner-title {
+    font-size: 4vw;
+}
+
+.banner-subtitle {
+    font-size: 1vw;
+}
+
+.banner-text {
+    font-size: 1.0vw;
+}
+
+.banner-number {
+    font-size: 10vw;
+}
+
+.banner-number-text {
+    font-size: 1vw;
+}
+
+.banner-section-title {
+    font-size: 2vw;
+}
+
+.banner-section-text {
+    font-size: 1vw;
+}
+
+/* Para pantallas de tablet (768px - 1024px) */
+@media (max-width: 1024px) {
+    .banner-title {
+        font-size: 6vw;
+    }
+
+    .banner-subtitle {
+        font-size: 2vw;
+    }
+
+    .banner-text,
+    .banner-number-text,
+    .banner-section-title,
+    .banner-section-text {
+        font-size: 1.5vw;
+    }
+
+    .banner-number {
+        font-size: 12vw;
+    }
+}
+
+/* Para pantallas de móviles (menos de 768px) */
+@media (max-width: 768px) {
+    .banner-title {
+        font-size: 8vw;
+    }
+
+    .banner-subtitle {
+        font-size: 3vw;
+    }
+
+    .banner-text,
+    .banner-number-text,
+    .banner-section-title,
+    .banner-section-text {
+        font-size: 2.5vw;
+    }
+
+    .banner-number {
+        font-size: 14vw;
+    }
+}
+
 
 /* #######################    ESTILOS DE FUENTES   ####################### */
 
@@ -5,117 +79,127 @@
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-  }
-  
-  .roboto-light {
+}
+
+.roboto-light {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: normal;
-  }
-  
-  .roboto-regular {
+}
+
+.roboto-regular {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: normal;
-  }
-  
-  .roboto-medium {
+}
+
+.roboto-medium {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: normal;
-  }
-  
-  .roboto-bold {
+}
+
+.roboto-bold {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: normal;
-  }
-  
-  .roboto-black {
+}
+
+.roboto-black {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: normal;
-  }
-  
-  .roboto-thin-italic {
+}
+
+.roboto-thin-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: italic;
-  }
-  
-  .roboto-light-italic {
+}
+
+.roboto-light-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 300;
     font-style: italic;
-  }
-  
-  .roboto-regular-italic {
+}
+
+.roboto-regular-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 400;
     font-style: italic;
-  }
-  
-  .roboto-medium-italic {
+}
+
+.roboto-medium-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 500;
     font-style: italic;
-  }
-  
-  .roboto-bold-italic {
+}
+
+.roboto-bold-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 700;
     font-style: italic;
-  }
-  
-  .roboto-black-italic {
+}
+
+.roboto-black-italic {
     font-family: "Roboto", sans-serif;
     font-weight: 900;
     font-style: italic;
-  }
-  
-  /* #######################    ESTILOS BANNER   ####################### */
+}
 
-  .bg-const{
+/* #######################    ESTILOS BANNER   ####################### */
+
+.bg-const {
     background-color: #545454;
-  }
+}
 
-  .bg-const-text {
+.bg-const-text {
     background-color: #ff9800;
-  }
+}
 
-  .bg-450 {
+.bg-450 {
     background-color: black;
-  }
+}
 
-  .overlay {
+/* Ajusta la altura del banner para que no cubra el navbar */
+#banner .bg-cover {
+    height: calc(100vh - 56px); /* Ajusta este valor si tu navbar tiene otra altura */
+    position: relative;
+}
+
+/* Overlay que cubre solo el contenido del banner, no el navbar */
+#banner .overlay {
     position: absolute;
     inset: 0;
     background-color: rgba(0, 0, 0, 0.5);
-  }
+    z-index: 1; /* Asegúrate de que esté detrás del contenido del banner */
+}
 
-  .bg-cover {
-    background-size: cover;
-    background-position: center;
-    height: 100vh;
-    
-  }
-  .text-white {
+.text-white {
     color: white !important;
-  }
-  .custom-btn {
-    background-color:#ff9800 ;
+}
+
+.custom-btn {
+    background-color: #ff9800;
     color: var(--bs-light);
     padding: 0.5rem 1.5rem;
     border-radius: 0.5rem;
-  }
-  .custom-btn:hover {
+}
+
+.custom-btn:hover {
     background-color: var(--bs-secondary);
     opacity: 0.8;
-  }
+}
 
-  /* #######################    ESTILOS CARD INFO  ####################### */
+/* Ajusta el contenido del banner para que quede sobre la superposición */
+#banner .d-flex {
+    z-index: 2;
+    /* Para asegurarte de que el contenido del banner esté visible sobre la overlay */
+}
 
-  .custom-card {
+/* #######################    ESTILOS CARD INFO  ####################### */
+
+.custom-card {
     width: 100%;
     max-width: 700px;
     height: 366px;
@@ -123,26 +207,31 @@
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    background-color: #fcd34d; 
+    background-color: #fcd34d;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     margin: 0, auto;
-  }
-  .custom-card img {
+}
+
+.custom-card img {
     margin-bottom: 1rem;
-  }
-  .custom-card h2,
-  .custom-card h3 {
+}
+
+.custom-card h2,
+.custom-card h3 {
     color: #000;
-  }
-  .custom-card p {
-    color: #000; 
-  }
+}
 
- .fa-ruler-combined, .fa-building, .fa-list-check{
-     font-size: 2.5rem;
- }
+.custom-card p {
+    color: #000;
+}
 
- 
- .bg-footer {
-     background-color: #231f20;
- }
+.fa-ruler-combined,
+.fa-building,
+.fa-list-check {
+    font-size: 2.5rem;
+}
+
+
+.bg-footer {
+    background-color: #231f20;
+}
